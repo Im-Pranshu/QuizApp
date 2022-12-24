@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtQuizApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:text="@string/quiz_app"
+        android:textColor="#F44336"
+        android:textSize="60sp" />
+
+    <Button
+        android:id="@+id/btnStartQuiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnAbout"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="25dp"
+        android:padding="12dp"
+        android:backgroundTint="#FF5722"
+        android:text="@string/start_quiz"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:hint="@string/enter_your_name"
+        android:inputType="textPersonName"
+        android:textColor="#df040b"
+        android:importantForAutofill="no" />
+
+    <Button
+        android:id="@+id/btnAbout"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="33dp"
+        android:padding="12dp"
+        android:backgroundTint="#01579B"
+        android:text="@string/about"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="18sp" />
+
+</RelativeLayout>

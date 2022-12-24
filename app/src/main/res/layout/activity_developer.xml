@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".DeveloperActivity">
+
+    <TextView
+        android:id="@+id/txtDev"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp"
+        android:text="@string/developer"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000000"
+        android:textSize="40sp" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="#01579B"
+        android:text="@string/back"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imgDevPic"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignTop="@+id/txtDevName"
+        android:background="@color/black"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentBottom="false"
+        android:contentDescription="@string/developer_picture"
+        android:src="@drawable/ic_launcher_foreground" />
+
+    <TextView
+        android:id="@+id/txtDevName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtDev"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="40dp"
+        android:layout_toEndOf="@+id/imgDevPic"
+        android:text="@string/pranshu_sharma"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/txtDevEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtDevName"
+        android:layout_alignStart="@+id/txtDevName"
+        android:layout_marginTop="12dp"
+        android:text="@string/bobby902619_gmail_com"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/txtDevCommName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgDevPic"
+        android:layout_alignStart="@+id/txtDevName"
+        android:layout_marginTop="40dp"
+        android:layout_toEndOf="@+id/imgDevComm"
+        android:text="@string/devcomm"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/txtDevCommEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtDevCommName"
+        android:layout_alignStart="@+id/txtDevName"
+        android:layout_marginTop="12dp"
+        android:text="@string/kartikpc9628_gmail_com"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ImageView
+        android:id="@+id/imgDevComm"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_alignTop="@+id/txtDevCommName"
+        android:layout_alignParentStart="true"
+        android:background="@color/black"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentBottom="false"
+        android:contentDescription="@string/developer_community_pic"
+        android:src="@drawable/ic_launcher_foreground" />
+
+</RelativeLayout>
