@@ -9,13 +9,13 @@ import androidx.appcompat.app.AppCompatActivity
 open class QuestionsActivity : AppCompatActivity() {
 
     private lateinit var txtView: TextView
-    private lateinit var submitButton : Button
-    private lateinit var quitButton : Button
-    private lateinit var radioGroup : RadioGroup
-    private lateinit var rb1 : RadioButton
-    private lateinit var rb2 : RadioButton
-    private lateinit var rb3 : RadioButton
-    private lateinit var rb4 : RadioButton
+    private lateinit var submitButton: Button
+    private lateinit var quitButton: Button
+    private lateinit var radioGroup: RadioGroup
+    private lateinit var rb1: RadioButton
+    private lateinit var rb2: RadioButton
+    private lateinit var rb3: RadioButton
+    private lateinit var rb4: RadioButton
 
     private var questions = arrayOf(
         "Which method can be defined only once in a program?",
@@ -42,16 +42,46 @@ open class QuestionsActivity : AppCompatActivity() {
         "int"
     )
     private var opt = arrayOf(
-        "finalize method", "main method", "static method", "private method",
-        "&", "&=", "|=", "<=",
-        "import", "this", "catch", "abstract",
-        "Interface", "interface", "intf", "Intf",
-        "public", "protected", "private", "All of the mentioned",
-        "Import pkg.", "import pkg.*", "Import pkg.*", "import pkg.",
-        "int", "float", "void", "None of the mentioned",
-        "lang", "java", "util", "java.packages",
-        "equals()", "Equals()", "isequal()", "Isequal()",
-        "int", "long", "byte", "float"
+        "finalize method",
+        "main method",
+        "static method",
+        "private method",
+        "&",
+        "&=",
+        "|=",
+        "<=",
+        "import",
+        "this",
+        "catch",
+        "abstract",
+        "Interface",
+        "interface",
+        "intf",
+        "Intf",
+        "public",
+        "protected",
+        "private",
+        "All of the mentioned",
+        "Import pkg.",
+        "import pkg.*",
+        "Import pkg.*",
+        "import pkg.",
+        "int",
+        "float",
+        "void",
+        "None of the mentioned",
+        "lang",
+        "java",
+        "util",
+        "java.packages",
+        "equals()",
+        "Equals()",
+        "isequal()",
+        "Isequal()",
+        "int",
+        "long",
+        "byte",
+        "float"
     )
     private var flag = 0
     open var marks = 0
@@ -63,8 +93,8 @@ open class QuestionsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_questions)
 
-        val score : TextView = findViewById(R.id.textView4)
-        val textView : TextView= findViewById(R.id.DispName)
+        val score: TextView = findViewById(R.id.textView4)
+        val textView: TextView = findViewById(R.id.DispName)
         val intent1 = intent
         val name = intent1.getStringExtra("myName")
 
@@ -98,7 +128,7 @@ open class QuestionsActivity : AppCompatActivity() {
                 return@OnClickListener
             }
 
-            val uAns : RadioButton = findViewById(radioGroup.checkedRadioButtonId)
+            val uAns: RadioButton = findViewById(radioGroup.checkedRadioButtonId)
             val ansText = uAns.text.toString()
 
             if (ansText == answers[flag]) {
