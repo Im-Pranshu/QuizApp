@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 
 open class QuestionsActivity : AppCompatActivity() {
 
-    private lateinit var tv: TextView
+    private lateinit var txtView: TextView
     private lateinit var submitButton : Button
     private lateinit var quitButton : Button
     private lateinit var radioGroup : RadioGroup
@@ -76,7 +76,7 @@ open class QuestionsActivity : AppCompatActivity() {
 
         submitButton = findViewById(R.id.button3)
         quitButton = findViewById(R.id.buttonquit)
-        tv = findViewById(R.id.tvque)
+        txtView = findViewById(R.id.tvque)
 
         radioGroup = findViewById(R.id.answersgrp)
         rb1 = findViewById(R.id.radioButton1)
@@ -84,7 +84,7 @@ open class QuestionsActivity : AppCompatActivity() {
         rb3 = findViewById(R.id.radioButton3)
         rb4 = findViewById(R.id.radioButton4)
 
-        tv.text = questions[flag]
+        txtView.text = questions[flag]
         rb1.text = opt[0]
         rb2.text = opt[1]
         rb3.text = opt[2]
@@ -116,7 +116,7 @@ open class QuestionsActivity : AppCompatActivity() {
             }
 
             if (flag < questions.size) {
-                tv.text = questions[flag]
+                txtView.text = questions[flag]
                 rb1.text = opt[flag * 4]
                 rb2.text = opt[flag * 4 + 1]
                 rb3.text = opt[flag * 4 + 2]
